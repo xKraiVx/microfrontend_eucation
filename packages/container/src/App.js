@@ -11,7 +11,9 @@ const DashboardLazy = lazy(() => import("./components/DashboardApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
 
 const generateClassName = createGenerateClassName({
-  productionPrefix: "con",
+  productionPrefix: "container",
+  disableGlobal: true,
+  seed: "test",
 });
 
 const history = createBrowserHistory();
