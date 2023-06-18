@@ -16,8 +16,8 @@ export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
   return (
-    <StylesProvider generateClassName={generateClassName}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <StylesProvider generateClassName={generateClassName}>
         <div>
           <Header
             isSignedIn={isSignedIn}
@@ -34,7 +34,7 @@ export default () => {
             </Switch>
           </Suspense>
         </div>
-      </BrowserRouter>
-    </StylesProvider>
+      </StylesProvider>
+    </BrowserRouter>
   );
 };
